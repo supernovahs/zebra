@@ -1,7 +1,12 @@
 pragma solidity ^0.8.13;
 
-contract NameInAssembly{
+/// @notice  Returns string using low level yul call 
+/// @author Zebra 
+library  StringInYul{
 
+/*//////////////////////////////////////////////////////////////
+                    Return String using Assembly 
+    //////////////////////////////////////////////////////////////*/
 function hello() public pure returns(string memory){
         assembly{
             mstore(0x00,0x20)

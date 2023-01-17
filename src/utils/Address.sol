@@ -2,7 +2,7 @@ pragma solidity ^0.8.15;
 
 library Address {
 
-// @notice Yul implementation of isContract 
+/// @dev Yul implementation of isContract 
     function isContract(address _account) internal view returns (bool success){
         assembly{
             let x :=0
@@ -10,5 +10,4 @@ library Address {
             success:= gt(x,0)
         }
     }
-
 }
