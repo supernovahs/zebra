@@ -33,7 +33,7 @@ function hello() public pure returns(string memory){
 Strings are dynamic types , they are stored as follows:
 - First we store the pointer to the start of the dynamic data i.e offset 
 - Then store the length of the string in the next slot . 
-- In the next slot, we store the string in Hex format left padded . 
+- In the next slot, we store the string in Hex format right padded . 
 
 Example - Store "hello" 
 
